@@ -1,56 +1,82 @@
-body{
-  background-color:rgba(25,25,25);
+/* General Styles */
+body {
+  background-color: #1a1a1a; 
+  font-family: sans-serif;
+  text-align: center; 
 }
 
-.title{
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 30px;
+/* Title */
+.title {
+  color: #ffffff; /* White text color */
+  font-size: 2.5rem; /* Larger font size */
   font-weight: 700;
   margin-top: 30px;
 }
 
-.icon{
+/* Icon */
+.icon {
   height: 50px;
   width: 50px;
   cursor: pointer;
-  /* margin: 10px; */
 }
 
-.move-button{
-  background-color: transparent;
-  border: 3px solid white;
+/* Move button */
+.move-button {
+  background-color: white;
+  border: 3px solid #ffffff; /* White border */
   width: 120px;
   height: 120px;
-  border-radius: 100px;
-  margin: 5px;
+  border-radius: 50%; /* Circular shape */
+  margin: 5px auto; /* Center horizontally */
+  display: inline-flex; /* Display buttons in a row */
+  justify-content: center; /* Center align horizontally */
+  align-items: center; /* Center align vertically */
+  transition: background-color 0.3s ease; /* Smooth transition */
+  margin-left:2%;
 }
 
+.move-button:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Lighter background on hover */
+}
+
+/* Reset and AutoPlay buttons */
 .resetButton,
-.AutoPlay-Button{
+.AutoPlay-Button {
   cursor: pointer;
-  font-size: 15px;
+  font-size: 1rem; /* Standard font size */
   font-weight: bold;
   margin: 10px;
-  padding: 10px;
+  padding: 10px 20px; /* Padding on top/bottom, more padding on left/right */
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50; /* Green background */
+  color: #ffffff; /* White text color */
+  transition: background-color 0.3s ease; /* Smooth transition */
 }
 
-.score{
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.resetButton:hover,
+.AutoPlay-Button:hover {
+  background-color: #222; /* Darker green on hover */
+}
+
+/* Score */
+.score {
+  color: #ffffff;
   margin: 10px;
+  font-size: 1.2rem; /* Larger font size */
 }
 
-.showMoves{
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 20px 10px 20px 10px;
+/* Show moves */
+.showMoves {
+  color: #ffffff;
+  margin: 20px 10px; /* Adjusted margin */
+  font-size: 1.1rem; /* Slightly larger font size */
 }
 
-.showResult{
-  color: white;
-  font-size: 23px;
-  font-weight: 500;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 20px 10px 20px 10px;
+/* Show result */
+.showResult {
+  color: #ffffff;
+  margin: 20px 10px; /* Adjusted margin */
+  font-size: 1.3rem; /* Larger font size */
+  font-weight: bold; /* Bold text */
 }
